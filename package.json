@@ -1,0 +1,27 @@
+{
+  "name": "escpos-javascript",
+  "version": "1.0.1",
+  "description": "ESC/POS receipt printing library in pure JavaScript",
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node demo/print-demo.js"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/DrBackmischung/ESCPOS-JS"
+  },
+  "keywords": [
+      "escpos",
+      "printer",
+      "receipt",
+      "pos",
+      "typescript",
+      "nodejs"
+  ],
+  "author": "Mathis Neunzig",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ]
+}
