@@ -104,11 +104,13 @@ console.log("Captured buffers:", mock.getPrintedData().length);
 
 ---
 
-## 🛠 Notes
+## 📣 Feature Request?
 
-- Uses Node.js `Buffer`, `fs`, and `child_process`
-- Output is written as a `.bin` file and printed using native system tools
-- You must ensure your printer accepts ESC/POS and is installed correctly
+This repository is only for **bug reports and maintenance** related to the language-specific implementation.
+
+Please open all **feature requests, enhancements, and cross-language discussions** in the **central repository**:  
+
+👉 [DrBackmischung/ESCPOS](https://github.com/DrBackmischung/ESCPOS/issues)
 
 ---
 
