@@ -1,4 +1,4 @@
-# escpos-js
+# escpos-javascript
 
 A **pure JavaScript** (ESModules) library for printing ESC/POS receipts, barcodes, and QR codes in Node.js.  
 ✅ Works on **macOS, Linux, and Windows** using system print commands like `lp` and `print`.
@@ -19,7 +19,7 @@ A **pure JavaScript** (ESModules) library for printing ESC/POS receipts, barcode
 ## 📦 Installation
 
 ```bash
-npm install escpos-js
+npm install escpos-javascript
 ```
 
 ---
