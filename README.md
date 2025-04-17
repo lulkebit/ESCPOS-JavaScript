@@ -13,6 +13,9 @@ A **pure JavaScript** (ESModules) library for printing ESC/POS receipts, barcode
 ✅ Mock printer for unit testing  
 ✅ No dependencies, no native bindings  
 ✅ Fully cross-platform  
+✅ Well-documented with JSDoc  
+✅ Comprehensive test suite  
+✅ Modern async/await printing API
 
 ---
 
@@ -65,7 +68,13 @@ const receipt = new POSReceiptBuilder()
   .setFooter("Thank you!")
   .build();
 
-printer.print(receipt);
+// Using the new async/await API
+try {
+  await printer.print(receipt);
+  console.log("Print job sent successfully");
+} catch (error) {
+  console.error("Print failed:", error.message);
+}
 ```
 
 ---
@@ -101,6 +110,47 @@ mock.print(receipt);
 
 console.log("Captured buffers:", mock.getPrintedData().length);
 ```
+
+## 🔍 Running Tests
+
+The library now includes comprehensive test coverage to ensure reliability:
+
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run tests in watch mode during development
+npm run test:watch
+```
+
+---
+
+## 📝 Documentation
+
+All classes, methods, and functions are documented with JSDoc comments. This makes it easy to understand the library's API and get proper IDE code completion.
+
+Example of documented method:
+
+```js
+/**
+ * Adds an item with name and price
+ * @param {string} name - Item name 
+ * @param {number} price - Item price
+ * @returns {POSReceiptBuilder} This builder for chaining
+ */
+addItem(name, price) {
+  // Implementation
+}
+```
+
+---
+
+## 🛠️ Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
